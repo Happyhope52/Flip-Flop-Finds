@@ -25,24 +25,26 @@
 
 <!--THIS IS MY NAV BAR SECTION - LATER ON MAY WANT TO ADD A SHOP TAB AND APROPRIATE ECOMMERCE LINKS-->
 
-
-<div class="topnav">
+<div class="weatherWidget" ></div>
+<div class="topnav" id="myTopnav">
   <a class="active" href="#home">Home</a>
-  <a href="./About.html">About</a>
-  <a href="./Gallery.html">Gallery</a>
-  <a href="./Contact.html">Contact</a>
+  <a href="./About.html" class='hidden'>About</a>
+  <a href="./Gallery.html"class= 'hidden'>Gallery</a>
+  <a href="./Contact.html"class='hidden'>Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
 </div>
 
+
 <!--<ul id='navMiddle'> WHERE TO PUT THESE HYPERLINKS AND COLUMN VIEW
-  <li><a href="#" class="navlinks">Home</a></li>
-  <li><a href="#" class="navlinks">About</a></li
-  <li><a href="#" class="navlinks">Gallery</a></li>
-  <li><a href="#" class="navlinks">Contact</a></li>
+  <li><a href="#" class="cardlinks">Home</a></li>
+  <li><a href="#" class="cardlinks">About</a></li
+  <li><a href="#" class="cardlink">Gallery</a></li>
+  <li><a href="#" class="cardlinks">Contact</a></li>
 </ul>-->
 
 <!--THIS IS MY HERO PICTURE SECTION-->
   
-
 
   <div class="hero-image">
 
@@ -52,11 +54,12 @@
       <button>Come take a walk inside</button><!--THIS NEEDS A CALL TO ACTION --->
 
 
-      <marquee scrollamount="10"
+      <div class = "flipflopsmove">
+     <marquee scrollamount="10"
       direction="up"
       behavior="scroll">
-      <img src="images/ezgif.com-resize.gif" />
-      </marquee>
+      <img src="./images/ezgif.com-resize.gif" />
+      </marquee></div>
         </div>
 </div>
 
@@ -107,6 +110,19 @@
 <!--=======================END OF DESKTOP VERSION==========================-->
 
 <!--*************************MOBILE VIEW**********************************-->
+<!--this is nav bar for burger menu - mobile view-->
+<!--<div class="topnav2" id="myTopnav2">
+  <a href="#home" class="active">Home</a>
+  <a href="#About">About</a>
+  <a href="#Gallery">Gallery</a>
+  <a href="#Contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>  -->
+
+
+
 <!--=========================END OF MOBILE VERSION========================-->
 
 <br>
@@ -123,6 +139,10 @@
 
   <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>-->
 </footer>
+
+<script src="./flip.js"> </script>
+
+
 </body>
 </html>
 

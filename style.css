@@ -12,12 +12,23 @@ font-family: 'Festive', cursive;
 font-family: 'Cormorant Upright', serif;
 font-family: 'Explora', cursive;*/
 
+/*.mobileView{
+  display: none;
+}*/
+
 body,
 html {
   background-color: rgba(162, 244, 250, 0.979);
   height: 100%;
   width: 100%;
+  /*text-decoration: none;*/
 }
+
+/*==================DESKTOP VIEW=========================================*/
+
+/*.weatherWidget {
+  background-color: aqua;
+}*/
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -48,13 +59,19 @@ html {
   background-color: rgba(162, 244, 250, 0.979);
   color: white;
 }
+
+/*.topnav.hidden {
+  padding: 5px;
+}*/
+
 .hero-image {
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
   height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 .hero-text {
   text-align: center;
@@ -85,6 +102,14 @@ html {
  need to find out why button is half grey*/
 }
 
+.hero-image flipflopsmove {
+  width: 100%;
+}
+
+/*.hero-image marquee {
+  margin: 0 auto;
+  display: block;}*/
+
 .shopwindow {
   display: flex;
   justify-content: space-evenly;
@@ -100,6 +125,10 @@ html {
   vertical-align: top;
   cursor: pointer;
 }
+
+/*.card :hover {
+  color: rgba (48, 241, 232, 0.3) 5px 5px 5px 12px;
+}  add something to make it pulse*/
 
 img {
   width: 260px;
@@ -138,6 +167,7 @@ img {
   display: none;
 }*/
 
+/*==================================MOBILE AND DESKTOP======================*/
 footer {
   display: flex;
   justify-content: center;
@@ -177,3 +207,68 @@ footer {
 */
 
 /* need to add responsive media - also mobile view?*/
+
+/* +++++++++++++++++++++CSS FOR RESPONSIVE MEDIA ++++++++++++++++++++++++++++++
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/*.topnav2 {
+  display: none;}*/
+
+/* When the screen is less than 450 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 450px) {
+  .topnav a {
+    display: none;
+  }
+
+  /*.topnav2 {
+    display: center;
+  }*/
+  .topnav a.icon {
+    float: center;
+    display: inline;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 450px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    text-align: center;
+  }
+  /*.topnav.responsive {
+    float: none;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    width: 100%;
+    text-align: center;}*/
+
+.shopwindow {
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.hero-text h1 {
+    font-size: 2em;}*/
+
+/*.body,
+  html {
+    display: center;
+  }*/

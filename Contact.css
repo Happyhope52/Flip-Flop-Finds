@@ -77,3 +77,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: turquoise;
 }
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 70%;
+  }
+}
