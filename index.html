@@ -16,6 +16,7 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Flip Flop Finds</title>
 </head>
 
@@ -26,22 +27,20 @@
 <!--THIS IS MY NAV BAR SECTION - LATER ON MAY WANT TO ADD A SHOP TAB AND APROPRIATE ECOMMERCE LINKS-->
 
 <div class="weatherWidget" ></div>
+
+<div id= "desktopnavbar"> </div>
+
 <div class="topnav" id="myTopnav">
+  <div id= "myLinks">
   <a class="active" href="#home">Home</a>
-  <a href="./About.html" class='hidden'>About</a>
-  <a href="./Gallery.html"class= 'hidden'>Gallery</a>
-  <a href="./Contact.html"class='hidden'>Contact</a>
+  <a href="./About.html">About</a>
+  <a href="./Gallery.html">Gallery</a>
+  <a href="./Contact.html">Contact</a></div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
+  </a>
 </div>
 
-
-<!--<ul id='navMiddle'> WHERE TO PUT THESE HYPERLINKS AND COLUMN VIEW
-  <li><a href="#" class="cardlinks">Home</a></li>
-  <li><a href="#" class="cardlinks">About</a></li
-  <li><a href="#" class="cardlink">Gallery</a></li>
-  <li><a href="#" class="cardlinks">Contact</a></li>
-</ul>-->
 
 <!--THIS IS MY HERO PICTURE SECTION-->
   
@@ -72,6 +71,7 @@
 
   <div class="shopwindow"> <!--this is flex container - cross ref all these card with css styling-->
 
+    <a href='Sea-Glass.html'>
   <div class="card">
     <img src="./images/glass.webp" alt="  " />
     <div class="card-text">
@@ -79,7 +79,9 @@
       <p>Beautiful designs from sea glass collected along the beaches of Frinton, Walton and Hamford Water</p> 
     </div>
   </div>
-  
+</a>
+
+<a href='Decoupage.html'>
   <div class="card">
     <img src="./images/shells.jpg" alt="  " />
     <div class="card-text">
@@ -87,6 +89,10 @@
       <p>Shells collected along the shore, decorated with a fantastic choice of designs. Contact us to ask about personalisation.</p>
     </div>
   </div>
+  </a>
+
+
+  <a href='Driftwood.html'>
   <div class="card">
     <img src="./images/woodycraft.webp" alt="  " />
     <div class="card-text">
@@ -94,13 +100,18 @@
       <p>We are located on the North Sea, so our driftwood could have travelled from the coasts of the Artic, Baltic or beyond - the world is your oyster! </p>
     </div>
   </div>
+  </a>
+
+
+<a href='Jewellery.html'>
   <div class="card">
     <img src="./images/jewellery.webp" alt="  " />
     <div class="card-text">
       <h2>Jewellery</h2>
       <p>. We have created a stunning selection of jewellery, made from shells and seaglass</p>
     </div>
-
+  </div>
+  </a>
  
 
 </section>
@@ -109,19 +120,26 @@
 
 <!--=======================END OF DESKTOP VERSION==========================-->
 
+
+
+
 <!--*************************MOBILE VIEW**********************************-->
-<!--this is nav bar for burger menu - mobile view-->
-<!--<div class="topnav2" id="myTopnav2">
-  <a href="#home" class="active">Home</a>
-  <a href="#About">About</a>
-  <a href="#Gallery">Gallery</a>
-  <a href="#Contact">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<section>
+<!-- Navigation Menu -
+<div class="topnavmobile">
+  <a href="#home" class="activemobile">Logo</a>-->
+  <!-- Navigation links (hidden by default) -->
+  <!--<div id="myLinks">
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./Contact.html">Contact</a>
+    <a href="./About.html">About</a>
+  </div>-->
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>  -->
-
-
+</div>-->
+</section>
 
 <!--=========================END OF MOBILE VERSION========================-->
 
