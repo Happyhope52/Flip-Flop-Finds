@@ -93,7 +93,9 @@ section {
   cursor: pointer;
   align-self: baseline;
 }
-
+.shopcontainer :hover {
+  transform: scale(1.05);
+}
 /*.card :hover {
   color: rgba (48, 241, 232, 0.3) 5px 5px 5px 12px;
 }  add something to make it pulse*/
@@ -230,5 +232,13 @@ footer {
 
   .seaglasswords {
     color: white;
+  }
+  .shopcontainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: space-evenly;
+    margin-left: 35px;
+    /*background-color: blue;*/
   }
 }

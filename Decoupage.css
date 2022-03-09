@@ -216,4 +216,12 @@ footer {
   .decoupagewords {
     color: white;
   }
+  .shopcontainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: space-evenly;
+    margin-left: 35px;
+    /*background-color: blue;*/
+  }
 }

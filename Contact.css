@@ -115,6 +115,8 @@ footer {
 
 #footerRight i:hover {
   color: rgb(218, 26, 50);
+  */
+
 @media screen and (max-width: 450px) {
   p {
     text-align: left;
@@ -122,8 +124,6 @@ footer {
     color: orange;
   }
 }
-
-
 
 @media screen and (max-width: 450px) {
   .container {
