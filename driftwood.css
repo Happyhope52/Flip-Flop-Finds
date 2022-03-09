@@ -200,9 +200,17 @@ footer {
     background-color: #04aa6d;
     color: white;
   }
+
   section {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #sidebar {
+    width: 100%;
+  }
+
+  .driftwoodwords {
+    color: white;
   }
 }

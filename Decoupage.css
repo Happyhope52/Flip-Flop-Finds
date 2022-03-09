@@ -209,4 +209,11 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  #sidebar {
+    width: 100%;
+  }
+
+  .decoupagewords {
+    color: white;
+  }
 }

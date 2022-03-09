@@ -206,4 +206,22 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  /*#sidebar {
+    width: 100%;
+    color: rgb(247, 183, 101);
+    padding: 10px;
+    font-size: 1em;
+    font-family: "Dancing Script";
+    text-align: center;
+    width: 220px;
+  }*/
+
+  #sidebar {
+    width: 100%;
+  }
+
+  .jewellerywords {
+    color: white;
+  }
 }

@@ -9,14 +9,14 @@
 }*/
 // need to move this to html and link js page </script>
 
-function myFunction() {
+/*function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += "responsive";
   } else {
     x.className = "topnav";
   }
-}
+}*/
 
 window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
 window.weatherWidgetConfig.push({
