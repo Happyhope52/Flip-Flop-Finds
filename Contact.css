@@ -78,6 +78,53 @@ input[type="submit"]:hover {
   background-color: turquoise;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  color: rgb(244, 221, 158);
+  align-items: center;
+  margin-top: 150px;
+}
+
+#footerLeft {
+  /*display: flex;*/
+  /*justify-content; center;
+  align-items: center;*/
+  text-align: center;
+  width: 100vw;
+  height: 75px;
+  margin-top: 50px;
+}
+
+/*
+#footerRight {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 75px;
+}
+
+#footerRight i {
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#footerRight i:hover {
+  color: rgb(218, 26, 50);
+@media screen and (max-width: 450px) {
+  p {
+    text-align: left;
+    font-size: 17px;
+    color: orange;
+  }
+}
+
+
+
 @media screen and (max-width: 450px) {
   .container {
     width: 70%;

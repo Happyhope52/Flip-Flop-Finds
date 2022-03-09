@@ -3,56 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*stuff i will need
-font-family: 'Dancing Script', cursive;
-font-family: 'Festive', cursive;
-*/
-
-/*font-family: 'Cormorant', serif;
-font-family: 'Cormorant Upright', serif;
-font-family: 'Explora', cursive;*/
 
 body,
 html {
   background-color: rgba(162, 244, 250, 0.979);
   height: 100%;
   width: 100%;
+  /*display: inline-block;
+  font-family: "Dancing Script", cursive;
   /*text-decoration: none;*/
 }
-
-/*==================DESKTOP VIEW=========================================*/
-
-.visualcrossing-wx-widget {
-  background-color: bisque !important;
-}
-
-.visualcrossing-wx-widget .title {
-  color: aqua !important;
-}
-
-div.maxt {
-  color: aqua !important;
-  /*box-shadow: #1f567c 2px 2px 2px 2px;*/
-}
-
-div.date {
-  color: orange !important;
-}
-
-div.temp {
-  color: aqua !important;
-}
-
-i.wi.icon {
-  color: white;
-}
-
 /* Add a background color to the top navigation */
 .topnav {
   background-color: rgb(48, 241, 232);
   overflow: hidden;
   height: 50px; /* check this*/
-  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -78,66 +43,40 @@ i.wi.icon {
   color: white;
 }
 
-.hero-image {
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*margin: 10px;*/
-}
-.hero-text {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-family: "Dancing Script";
-  color: white;
-}
-
-.hero-text h1 {
-  font-size: 40px;
-}
-
-.hero-text p {
-  font-size: 30px;
-  padding-bottom: 25px;
-}
-
-.hero-text button {
-  background-color: rgba(162, 244, 250, 0.979);
-  border-radius: 25px;
-  height: 50px;
-  width: 300px;
-  color: rgb(247, 183, 101);
-  font-family: "Dancing Script";
-  font-size: 30px;
-  border-color: rgb(247, 183, 101) !important;
-  /*box-shadow: rgba(48, 241, 232, 0.3) 0px 0px 0px 3px;*/
-}
-
-.flipflopsmove marquee {
-  text-align: center;
-}
-
-/*.hero-image marquee {
-  margin: 0 auto;
-  display: block;}*/
-
-.shopwindow {
+section {
   display: flex;
+  /*background-color: black;*/
+  justify-content: end;
+}
+
+#sidebar {
+  width: 75%;
+  color: rgb(247, 183, 101);
+  padding: 100px;
+  font-size: 1.5em;
+  font-family: "Dancing Script";
+  text-align: center;
+}
+.shopcontainer {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  max-width: 300px;
+  margin-right: 50px;
   justify-content: space-evenly;
 }
 
 /*THIS IS CARDS STYLING*/
 .card {
-  display: inline-block;
+  /*display: inline-block;*/
   box-shadow: rgba(48, 241, 232, 0.3) 5px 5px 5px 12px;
   width: 260px;
-  border-radius: 20px;
-  margin: 20px;
+  border-radius: 100%;
+  margin-right: 100px;
+  margin-top: 50px;
   vertical-align: top;
   cursor: pointer;
+  align-self: baseline;
 }
 
 /*.card :hover {
@@ -147,13 +86,15 @@ i.wi.icon {
 img {
   width: 260px;
   height: 200px;
-  border-radius: 20px 20px 0px 0px;
+  /*border-radius: 20px 20px 0px 0px;*/
+  border-radius: 100%;
   object-fit: cover;
 }
 
 .card-text {
   height: 180px;
   padding: 4px 30px 15px 30px;
+  border-radius: 100%;
 }
 
 .card h2 {
@@ -164,6 +105,7 @@ img {
   margin: 2px 0px 0px 0px;
   text-align: center;
   font-family: "Dancing Script";
+  border-radius: 100%;
 }
 
 .card p {
@@ -172,27 +114,17 @@ img {
   font-size: 18px;
   text-align: center;
   font-family: "Dancing Script";
+  border-radius: 100%;
 }
 
 .icon {
   display: none;
 }
-/*.topnav a.icon {
-  display: none;
-}*/
 
-/* Footer */
-
-/*===================================MOBILE VIEW=================================
-
-
-
-
-/*==================================MOBILE AND DESKTOP======================*/
 footer {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   color: rgb(244, 221, 158);
   align-items: center;
@@ -203,7 +135,7 @@ footer {
   /*justify-content; center;
   align-items: center;*/
   text-align: center;
-  width: 100vw;
+  width: 100%;
   height: 75px;
   margin-top: 50px;
 }
@@ -225,23 +157,7 @@ footer {
 
 #footerRight i:hover {
   color: rgb(218, 26, 50);
-}
-BUBBLES
-.bubble {
-   z-index : 999;
-   position : absolute;
-   border-radius : 50%;
-}
-
-
-
-
-
-*/
-
-/* +++++++++++++++++++++CSS FOR RESPONSIVE MEDIA ++++++++++++++++++++++++++++++
-
-/* When the screen is less than 450 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+}*/
 
 @media screen and (max-width: 450px) {
   .topnav {
@@ -284,27 +200,9 @@ BUBBLES
     background-color: #04aa6d;
     color: white;
   }
-
-  .shopwindow {
+  section {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  .hero-image {
-    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*margin: 10px;*/
-  }
 }
-
-/*.hero-text h1 {
-    font-size: 2em;}*/
-
-/*.body,
-  html {
-    display: center;
-  }*/
