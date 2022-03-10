@@ -30,6 +30,8 @@ window.weatherWidgetConfig.push({
     showConditions:true
 });
 
+/*window.navigator.geolocation.getCurrentPosition(console.log, console.log);*/
+
 (function() {
 var d = document, s = d.createElement('script');
 s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';

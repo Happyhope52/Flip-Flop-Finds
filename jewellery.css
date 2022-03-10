@@ -57,6 +57,11 @@ section {
   font-family: "Dancing Script";
   text-align: center;
 }
+
+#sidebar h1 {
+  font-size: 45px;
+}
+
 .shopcontainer {
   display: flex;
   flex-direction: column;
